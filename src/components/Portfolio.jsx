@@ -1,15 +1,16 @@
-import About from './sections/About';
-import Projects from './sections/Projects';
-import Education from './sections/Education';
-import Skills from './sections/Skills';
-import Contact from './sections/Contact';
+import Sidebar from "./components/Sidebar";
+import Inicio from "./components/sections/Inicio";
+import About from "./components/sections/About";
+import Projects from "./components/sections/Projects";
+import Education from "./components/sections/Education";
+import Skills from "./components/sections/Skills";
+import Contact from "./components/sections/Contact";
 
-const Portfolio = () => {
+function App() {
   return (
-    <div className="min-h-screen bg-[#1A1A2E] text-white">
-      <header>
-        {/* Contenido del header */}
-      </header>
+    <div className="bg-gray-900 text-white min-h-screen">
+      <Sidebar />
+      <Inicio />
       <About />
       <Projects />
       <Education />
@@ -17,6 +18,6 @@ const Portfolio = () => {
       <Contact />
     </div>
   );
-};
+}
 
-export default Portfolio;
+export default App;
