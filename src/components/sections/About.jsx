@@ -1,28 +1,20 @@
 const About = () => {
   return (
-    <section className="max-w-6xl w-full mx-auto px-6 py-12">
-      <div className="bg-[#2D2A4A] rounded-3xl p-6 text-cyan-400">
-        <h2 className="text-2xl text-pink-500 mb-6 text-center">Sobre mí</h2>
-        <p className="mb-4">
-          Soy una persona resolutiva, creativa y metódica, con gran capacidad
-          para la lógica de la programación y el desarrollo de software. Me
-          apasionan las tecnologías y mantenerme en constante aprendizaje.
+    <section id="sobre-mi" className="min-h-screen flex justify-center items-center">
+      <div className="container mx-auto max-w-4xl bg-[#252547] p-8 rounded-lg">
+        <h2 className="text-3xl font-bold text-pink-500 text-center mb-6">Sobre mí</h2>
+        <p className="text-cyan-400">
+          Soy una persona resolutiva, creativa y proactiva, con gran capacidad para trabajar en equipo. Me encanta aprender cosas nuevas y enfrentarme a desafíos que me permitan crecer profesionalmente.
         </p>
-        <p className="mb-4">
-          Estoy entusiasmado por seguir desarrollando mi carrera en el mundo del
-          desarrollo web, aplicando mis habilidades y conocimientos para crear
-          soluciones innovadoras.
+        <p className="text-cyan-400 mt-4">
+          Me gusta explorar nuevas tecnologías, crear pequeños proyectos personales y seguir aprendiendo sobre diseño UI/UX para mejorar la experiencia de usuario en mis desarrollos.
         </p>
-        <p>
-          Me gusta explorar nuevas tecnologías, crear pequeños proyectos
-          personales y seguir aprendiendo sobre diseño UI/UX para mejorar la
-          experiencia de usuario en mis desarrollos.
+        <p className="text-cyan-400 mt-4">
+          Puedes conocer más de mí en <a href="https://www.linkedin.com/in/roberto-moreno-iglesias" className="text-pink-500">Linkedin</a>.
         </p>
-        <p className="mt-4">Puedes conocer más de mí en <a className="text-pink-500">LinkedIn</a></p>
       </div>
     </section>
   );
 };
-
 
 export default About;

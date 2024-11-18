@@ -1,32 +1,26 @@
-
 const Skills = () => {
   return (
-    <section className="max-w-4xl mx-auto px-6 py-12">
-      <h2 className="text-2xl text-pink-500 mb-6">Skills</h2>
-      <div className="bg-[#252547] rounded-lg p-6 space-y-6">
-        <div>
-          <h3 className="text-pink-500 mb-3">Tecnologías Front-end</h3>
-          <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 bg-blue-600 rounded-full">HTML</span>
-            <span className="px-3 py-1 bg-yellow-600 rounded-full">JavaScript</span>
-            <span className="px-3 py-1 bg-blue-400 rounded-full">React</span>
-            <span className="px-3 py-1 bg-purple-600 rounded-full">Bootstrap</span>
+    <section id="skills" className="min-h-screen flex justify-center items-center">
+      <div className="container mx-auto max-w-4xl bg-[#252547] p-8 rounded-lg">
+        <h2 className="text-3xl font-bold text-pink-500 text-center mb-6">Skills</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <h3 className="text-cyan-400 mb-2">Tecnologías Front-end</h3>
+            <ul className="flex flex-wrap gap-2">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Astro</li>
+              <li>TailwindCSS</li>
+            </ul>
           </div>
-        </div>
-        <div>
-          <h3 className="text-pink-500 mb-3">Tecnologías Back-end</h3>
-          <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 bg-yellow-700 rounded-full">Python</span>
-            <span className="px-3 py-1 bg-green-600 rounded-full">Node.js</span>
-          </div>
-        </div>
-        <div>
-          <h3 className="text-pink-500 mb-3">Software y herramientas</h3>
-          <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 bg-blue-800 rounded-full">Visual Studio Code</span>
-            <span className="px-3 py-1 bg-orange-600 rounded-full">Figma</span>
-            <span className="px-3 py-1 bg-green-700 rounded-full">MongoDB</span>
-            <span className="px-3 py-1 bg-gray-700 rounded-full">GitHub</span>
+          <div>
+            <h3 className="text-cyan-400 mb-2">Tecnologías Back-end</h3>
+            <ul className="flex flex-wrap gap-2">
+              <li>Python</li>
+              <li>Django</li>
+            </ul>
           </div>
         </div>
       </div>

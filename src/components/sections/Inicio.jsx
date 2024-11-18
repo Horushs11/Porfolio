@@ -1,34 +1,16 @@
+import miFoto from '../../assets/images/mi-foto.jpg';
+
 const Inicio = () => {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-screen">
-        {/* Contenedor de la imagen con borde cyan */}
-        <div className="w-32 h-32 rounded-full border-2 border-cyan-400 mb-8 overflow-hidden">
-          <img
-            src="src\assets\images\mi-foto.jpg"
-            alt="Foto de perfil"
-            className="w-full h-full object-cover"
-          />
-        </div>
-  
-        {/* Nombre */}
-        <h1 className="text-5xl font-bold text-pink-500 mb-6 tracking-wider">
-          Roberto Moreno
-        </h1>
-  
-        {/* Texto descriptivo */}
-        <p className="text-xl text-cyan-400 mb-12 tracking-wide">
-          Bienvenido a mi portfolio como desarrollador front-end
-        </p>
-  
-        {/* Botón de descarga */}
-        <button
-          onClick={() => window.open('/assets/CV-Roberto-1910.pdf')}
-          className="bg-cyan-400 text-[#0D0D1E] px-8 py-3 rounded-full hover:bg-cyan-300 transition-all duration-300 transform hover:scale-105 tracking-wide"
-        >
-          Descargar mi cv
-        </button>
-      </div>
-    );
-  };
-  
-  export default Inicio;
+  return (
+    <section id="inicio" className="min-h-screen flex flex-col items-center justify-center text-center">
+      <img src={miFoto} alt="Foto de Roberto" className="w-32 h-32 rounded-full mb-4" />
+      <h1 className="text-4xl text-pink-500 mb-2">Roberto Moreno</h1>
+      <p className="text-cyan-400 mb-4">Bienvenido a mi portafolio como desarrollador front-end</p>
+      <a href="/src/assets/CV-Roberto-1910.pdf" download className="bg-cyan-400 text-[#0d0d2b] py-2 px-4 rounded-full hover:bg-pink-500">
+        Descargar mi CV
+      </a>
+    </section>
+  );
+};
+
+export default Inicio;

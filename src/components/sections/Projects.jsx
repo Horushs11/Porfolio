@@ -1,26 +1,51 @@
-
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
+  const projects = [
+    {
+      title: "Aplicación gestión de equipos",
+      description: "Aplicación para la gestión de entidades deportivas",
+      image: "/project1.png",
+      github: "#",
+      liveDemo: "#",
+    },
+    {
+      title: "Aplicación gestión de equipos",
+      description: "Aplicación para la gestión de entidades deportivas",
+      image: "/project2.png",
+      github: "#",
+      liveDemo: "#",
+    },
+    {
+      title: "Aplicación gestión de equipos",
+      description: "Aplicación para la gestión de entidades deportivas",
+      image: "/project3.png",
+      github: "#",
+      liveDemo: "#",
+    },
+  ];
+
   return (
-    <section className="max-w-4xl mx-auto px-6 py-12">
-      <h2 className="text-2xl text-pink-500 mb-6">Proyectos</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {[1, 2, 3].map((project) => (
-          <div key={project} className="bg-[#252547] rounded-lg p-4">
-            <img
-              src={`/path-to-project-${project}.jpg`}
-              alt={`Project ${project}`}
-              className="w-full h-40 object-cover mb-4"
-            />
-            <div className="flex justify-center">
-              <button className="bg-cyan-400 rounded-full p-2 hover:bg-cyan-300 transition-colors">
-                <svg className="w-6 h-6 text-[#1A1A2E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </button>
+    <section id="proyectos" className="min-h-screen flex justify-center items-center">
+      <div className="container mx-auto max-w-5xl bg-[#252547] p-8 rounded-lg">
+        <h2 className="text-3xl font-bold text-pink-500 text-center mb-6">Proyectos</h2>
+        <div className="flex overflow-x-scroll scrollbar-hide gap-4">
+          {projects.map((project, index) => (
+            <div key={index} className="min-w-[300px] bg-gray-800 p-4 rounded-lg">
+              <img src={project.image} alt={project.title} className="rounded-lg mb-4" />
+              <h3 className="text-xl text-cyan-400">{project.title}</h3>
+              <p className="text-cyan-300">{project.description}</p>
+              <div className="flex gap-4 mt-4">
+                <a href={project.github} className="text-cyan-400">
+                  <FaGithub size={20} />
+                </a>
+                <a href={project.liveDemo} className="text-cyan-400">
+                  <FaExternalLinkAlt size={20} />
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

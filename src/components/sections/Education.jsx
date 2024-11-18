@@ -1,25 +1,17 @@
-
 const Education = () => {
   return (
-    <section className="max-w-4xl mx-auto px-6 py-12">
-      <h2 className="text-2xl text-pink-500 mb-6">Educación</h2>
-      <div className="space-y-6 text-cyan-400">
-        <div>
-          <p className="text-pink-500">2019 - 2020</p>
-          <p>IES Domingo Figueroa</p>
-          <p>-Bachillerato Ciencias Sociales</p>
-        </div>
-        <div>
-          <p className="text-pink-500">2022 - 2024</p>
-          <p>Medac</p>
-          <p>-Desarrollo de aplicaciones multiplataforma</p>
-        </div>
-        <div>
-          <p className="text-pink-500">Certificados</p>
-          <p>Udemy</p>
-          <p>-Desarrollo web ultra rápido con Astro</p>
-          <p>-JavaScript Moderno Guía Definitiva</p>
-        </div>
+    <section id="educacion" className="min-h-screen flex justify-center items-center">
+      <div className="container mx-auto max-w-3xl bg-[#252547] p-8 rounded-lg">
+        <h2 className="text-3xl font-bold text-pink-500 text-center mb-6">Educación</h2>
+        <ul className="text-cyan-400 space-y-4">
+          <li>2018 - 2020: IES Dionisio Aguado - Bachillerato Ciencias Sociales</li>
+          <li>2022 - 2024: Medac - Desarrollo de aplicaciones multiplataforma</li>
+          <li>Certificados:</li>
+          <ul className="list-disc ml-8">
+            <li>Udemy - Desarrollo web ultra rápido con Astro</li>
+            <li>Udemy - JavaScript Moderno Guía Definitiva</li>
+          </ul>
+        </ul>
       </div>
     </section>
   );

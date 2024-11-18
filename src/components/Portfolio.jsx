@@ -8,14 +8,19 @@ import Contact from "./components/sections/Contact";
 
 function App() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
+    <div className="bg-gray-900 text-white min-h-screen grid md:grid-cols-[200px_1fr]">
+      {/* Sidebar */}
       <Sidebar />
-      <Inicio />
-      <About />
-      <Projects />
-      <Education />
-      <Skills />
-      <Contact />
+
+      {/* Contenido principal */}
+      <main className="p-4">
+        <Inicio />
+        <About />
+        <Projects />
+        <Education />
+        <Skills />
+        <Contact />
+      </main>
     </div>
   );
 }
